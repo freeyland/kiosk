@@ -1,0 +1,11 @@
+[Unit]
+Wants=network-online.target
+After=network.target network-online.target
+Description=startx
+
+[Service]
+User={{ kiosk_user }}
+ExecStart=/bin/sh -c "sudo -S -u {{ kiosk_user }} startx -- -nocursor"
+
+[Install]
+WantedBy=multi-user.target
