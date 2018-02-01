@@ -1,0 +1,2 @@
+# kiosk
+Ansible kiosk
