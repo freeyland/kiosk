@@ -9,26 +9,26 @@ Creates a chromium website kiosk out of ubuntu server with a very light stack of
 Requirements
 ------------
 
-- a clean installation of ubuntu server (tested with 16.04 and 17.04)
+- a clean installation of ubuntu server (tested 17.04)
 
 Installation
 ------------
 
-Role can be installed via ansible-galaxy or via cloning this repository into roles/.
-For more info, see: https://galaxy.ansible.com/xtrinch/kiosk/
+Role can will be installable via ansible-galaxy or via cloning this repository into roles/.
+For more info, see: https://galaxy.ansible.com/freeyland/kiosk/
 
 Role Variables
 --------------
 
     website_url: "http://www.google.com"
-    kiosk_user: test
+    kiosk_user: kiosk
 
 Example Playbook
 ----------------
 
     - hosts: servers
       roles:
-         - { role: xtrinch.kiosk, kiosk_user: test, website_url: "http://www.google.com" }
+         - { role: xtrinch.kiosk, kiosk_user: kiosk, website_url: "http://www.google.com" }
 
 License
 -------
