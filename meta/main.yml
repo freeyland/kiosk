@@ -1,6 +1,6 @@
 galaxy_info:
   author: xtrinch
-  description: create kiosk from ubuntu-server
+  description: create kiosk from ubuntu-server with virtual keyboard and screen rotation
   company:
   
   # If the issue tracker for your role is not on github, uncomment the
@@ -144,9 +144,9 @@ galaxy_info:
   #  - xenial
   #  - yakkety
   #  - zesty
-  - name: Debian
-    versions:
-    - all
+  #- name: Debian
+  #  versions:
+  #  - all
   #  - etch
   #  - jessie
   #  - lenny
@@ -212,7 +212,8 @@ galaxy_info:
   galaxy_tags: [
     'kiosk',
     'chromium',
-    'website'
+    'website',
+    'virtual keyboard'
  ]
     # List tags for your role here, one per line. A tag is
     # a keyword that describes and categorizes the role.
