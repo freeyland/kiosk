@@ -52,7 +52,7 @@
     - restart x
 
 - name: copy kiosk bashscript
-  template: src=kiosk.j2 dest=/home/'{{ kiosk_user }}'/
+  template: src=kiosk.j2 dest=/home/{{ kiosk_user }}/
   notify:
     - reload systemd
     - restart x
